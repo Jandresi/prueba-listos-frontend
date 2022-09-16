@@ -1,27 +1,31 @@
 # FrontendPruebaListos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
+Proyecto realizado con [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
 
-## Development server
+## Tecnologías utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Angular & Angular Material
 
-## Code scaffolding
+## Instalación del proyecto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+De la página oficial de [Node.js](https://nodejs.org/es/download/) descargar el programa.
 
-## Build
+Descargar el repositorio con git a través del siguiente comando:
+**git clone https://github.com/Jandresi/prueba-listos-frontend.git**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+*(O descargarlo como archivo comprimido en un zip)*
 
-## Running unit tests
+Tras la clonación del proyecto, ejecutar en una terminal dentro de la carpeta el comando **npm install** para instalar los paquetes necesarios para la ejecución del programa
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Ejecución del programa
 
-## Running end-to-end tests
+Estando en una terminal, ubicados dentro de la carpeta del proyecto *prueba-listos-frontend* ejecutaremos el siguiente comando para inicializar el proyecto:
+**ng serve**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para acceder al frontend tras compilado el proyecto debes entrar en el navegador a **http://localhost:4200**
 
-## Further help
+## Problemas de CORS al consumir la API de los acrónimos
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para el correcto funcionamiento de las peticiones a la API de los acrónimos se sugiere instalar una extensión que desbloquee los cors.
+
+Se recomienda instalar la extensión [Cors Unblock](https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino)

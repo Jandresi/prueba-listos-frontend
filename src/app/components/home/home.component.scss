@@ -1,0 +1,37 @@
+.animacion {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    padding: 16px;
+
+    .buscador {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .buscador__input {
+            width: 30%;
+            padding-top: 16px;
+        }
+        .buscador__btn {
+            height: 50px;
+            margin-bottom: 4px;
+        }
+    }
+
+    .tabla-resultados {
+        width: 80%;
+        margin: 0 10%;
+
+        .mat-header-cell, .mat-cell {
+            width: 20%;
+        }
+    }
+}

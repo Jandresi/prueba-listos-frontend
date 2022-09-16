@@ -1,0 +1,14 @@
+.main-container {
+    padding: 4px 2%;
+
+    .superior {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 2%;
+    }
+
+    .tabla-resultados {
+        width: 100%;
+    }
+}

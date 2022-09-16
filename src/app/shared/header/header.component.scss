@@ -1,0 +1,29 @@
+mat-toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #262727;
+
+	.logo-silva {
+		height: 100%;
+		img {
+			width: 10em;
+		}
+	}
+
+	.menu {
+		height: 100%;
+		width: 30%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		a {
+			text-decoration: none;
+			color: #fff;
+			transition: 0.3s;
+		}:hover {
+			color: #fbd214;
+		}
+	}
+}

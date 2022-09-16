@@ -1,0 +1,33 @@
+<mat-dialog-content class="main-container">
+    <div class="superior">
+        <h2 mat-dialog-title><strong>VARIACIONES DE:</strong> {{data.nombre}}</h2>
+        <button
+        mat-icon-button
+        color="warn"
+        (click)="cerrar()"
+        matTooltip="Cerrar">
+            <mat-icon>cancel</mat-icon>
+        </button>
+    </div>
+
+    <table mat-table [dataSource]="significados" class="mat-elevation-z8" class="tabla-resultados" matSort #tablaResultados>
+        <ng-container matColumnDef="fullForm">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Forma completa</th>
+            <td mat-cell *matCellDef="let element">{{element.lf}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="freq">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Frecuencia</th>
+            <td mat-cell *matCellDef="let element">{{element.freq}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="since">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Desde</th>
+            <td mat-cell *matCellDef="let element">{{element.since}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+</mat-dialog-content>
